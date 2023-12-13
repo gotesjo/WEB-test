@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="~/css/mystyle.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
     <link href="~/css/bootstyle.css" rel="stylesheet" />
 </head>
 <body id="page-top">
@@ -42,6 +42,12 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href=@Url.Action("editProfile", "Home")>Alla Projekt</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="@Url.Action("Privacy", "Home")">Logga in</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="@Url.Action("edit", "Home")">Redigera profil</a></li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="">Meddelanden
+                    <i class="fas fa-envelope fa-lg"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -50,6 +56,23 @@
             @RenderBody()
         </main> *@
         @RenderBody()
+    </div>
+
+    <!-- Modal meddelanden -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-mdb-ripple-init>Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">

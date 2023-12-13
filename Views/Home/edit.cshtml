@@ -4,7 +4,7 @@
 @{
 }
 
-<div id="unique-profile-section">
+@* <div id="unique-profile-section">
     <main>
         <h2>Redigera din personliga information</h2>
         <section class="profile-info">
@@ -45,5 +45,74 @@
         </section>
 
         <button type="submit">Spara</button>
+    </main>
+</div>
+ *@
+
+<div id="unique-profile-section" class="container">
+    <main>
+        <h2>Redigera din personliga information</h2>
+        <section class="profile-info">
+            <div class="mb-3">
+                <label for="name" class="form-label">Namn:</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telefonnummer:</label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Adress</label>
+                <input type="text" class="form-control" id="address">
+            </div>
+
+            <div class="mb-3">
+                <label for="profile-picture" class="form-label">Profilbild</label>
+                <input type="file" class="form-control" id="profile-picture">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Lösenord</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+        </section>
+
+        <section class="cv">
+            <h3>Redigera ditt cv</h3>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Kompetenser"></textarea>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Erfarenhet:"></textarea>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Utbildning"></textarea>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Projekt"></textarea>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h3>Mina skapade projekt</h3>
+            <div class="mb-3">
+                <label for="project-name" class="form-label">Namn</label>
+                <input type="text" class="form-control" id="project-name">
+            </div>
+
+            <div class="mb-3">
+                <label for="project-description" class="form-label">Beskrivning:</label>
+                <textarea class="form-control" id="project-description"></textarea>
+            </div>
+        </section>
+
+        <button type="submit" class="btn btn-primary">Spara</button>
     </main>
 </div>

@@ -4,7 +4,7 @@
     Egen css kod för login sidan
 */
 
-.login-container {
+/*.login-container {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
@@ -40,11 +40,11 @@ input[type="submit"] {
 
 .register-link {
     margin-top: 20px;
-}
+}*/
 
 /* Egen css för alla projekt */
 
-.ccontrainer body {
+/*.ccontrainer body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -54,9 +54,9 @@ input[type="submit"] {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-}
+}*/
 
-.ccontrainer h1 {
+/*.ccontrainer h1 {
     text-align: center;
 }
 
@@ -77,10 +77,10 @@ input[type="submit"] {
 
 .ccontrainer tr:nth-child(even) {
     background-color: #fff;
-}
+}*/
 
 /*FOOTER*/
-.footer-clean {
+/*.footer-clean {
     padding: 50px 0;
     background-color: #fff;
     color: #4b4c4d;
@@ -164,11 +164,11 @@ input[type="submit"] {
     margin-bottom: 0;
     font-size: 13px;
     opacity: 0.6;
-}
+}*/
 
 /*edti profile css*/
 
-    #unique-profile-section main {
+    /*#unique-profile-section main {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -216,6 +216,9 @@ input[type="submit"] {
 
         #unique-profile-section button:hover {
             background-color: var(--bs-link-hover-color);
-        }
+        }*/
 
 
+.cvsearch-input{
+    width: 50%;
+}
