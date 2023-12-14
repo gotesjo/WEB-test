@@ -28,6 +28,11 @@ namespace WEB_test.Controllers
             return View();
         }
 
+        public IActionResult Chat()
+        { 
+            return View(); 
+        }
+
         public IActionResult edit()
         {
             return View();
